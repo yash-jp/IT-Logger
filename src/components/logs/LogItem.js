@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Moment from "react-moment";
 
-const LogItem = ({ log }) => {
+const LogItem = ({log}) => {
   return (
     <li className="collection-item">
       <div>
@@ -27,8 +27,8 @@ const LogItem = ({ log }) => {
   );
 };
 
-LogItem.propTypes = {
-  log: PropTypes.object.isRequired,
-};
+// LogItem.propTypes = {
+//   log: PropTypes.object.isRequired,
+// };
 
 export default LogItem;

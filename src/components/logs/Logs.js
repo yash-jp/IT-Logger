@@ -15,7 +15,7 @@ const Logs = () => {
   // this is function for API call which will get all logs
   const getLogs = async () =>{
     setLoading(true);
-
+    console.log('get');
     // fetch api and we have used proxy
     const res = await fetch('/logs');
     const data = await res.json();
@@ -30,6 +30,7 @@ const Logs = () => {
 
   return (
     <ul className='collection with-header'>
+      {logs.length===0?console.log('nothing'):console.log('everything')}
       <li className='collection-header'>
         <h4 className='center'>System Logs</h4>
       </li>
